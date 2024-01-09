@@ -8,9 +8,6 @@ function User({ employees }) {
     return (
         <div id="app">
 
-            {/* {role === 'user' && <User />} */}
-            {/* {role === 'admin' && <Admin />} */}
-
             <div className="item item-4">
                 <h1>Table User</h1>
                 <table>

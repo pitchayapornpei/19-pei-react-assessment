@@ -43,21 +43,10 @@ function Owner() {
             <div className="flexbox">
                 <div className="item">
                     <div className="content">
-                        <div className="title">James - Group X - 61</div>
-                        <img className="image" src="https://images.unsplash.com/photo-1696399744120-da551393c12f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <div className="title">Pei - Group D - 19</div>
+                        <img className="image" src="https://i.pinimg.com/564x/3b/75/b1/3b75b10a2959abedfaf7d9a007a9cef2.jpg" alt="" />
                         <h1 className="content-title">Short Biography:</h1>
-                        <p className="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore
-                            et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa quit officia deserunt mollit anim id est laborum.
-                        </p>
+                        <p className="content-paragraph">💗I love Jeno NCT DREAM💗</p>
                     </div>
                 </div>
 

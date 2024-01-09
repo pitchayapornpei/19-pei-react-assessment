@@ -42,8 +42,10 @@ body {
 }
 
 .image {
-    width: 30%;
+    width: 20%;
     margin: 50px;
+    border-radius: 999px;
+    border: 20px solid rgb(192, 232, 255);
 }
 
 .content-title {

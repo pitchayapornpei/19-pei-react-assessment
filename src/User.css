@@ -47,38 +47,6 @@ body {
     text-align: center;
 }
 
-.button-user {
-    width: 30%;
-    background-color: rgb(147, 60, 253);
-    color: white;
-    padding: 14px 20px;
-    margin: 50px;
-
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button-user:hover {
-    background-color: rgb(193, 142, 255);
-}
-
-.button-admin {
-    width: 30%;
-    background-color: rgb(37, 170, 125);
-    color: white;
-    padding: 14px 20px;
-    margin: 50px;
-
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button-admin:hover {
-    background-color: rgb(47, 212, 157);
-}
-
 table {
     border-collapse: collapse;
     /* width: 100%; */

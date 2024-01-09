@@ -11,13 +11,24 @@ table {
     width: 100%;
 }
 
-th,
-td {
+th {
     background-color: rgb(55, 54, 54);
     color: white;
     text-align: center;
     padding: 15px;
-    border: 1px solid #646464;
+    border: 2px solid #4e4e4e;
+    font-size: 18px;
+    font-weight: 600;
+    /* border-radius: 6px 6px 0 0; */
+    /* border-collapse: collapse; */
+}
+
+td {
+    background-color: rgba(55, 54, 54, 0.692);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #4e4e4e;
     /* border-radius: 6px 6px 0 0; */
     /* border-collapse: collapse; */
 }
