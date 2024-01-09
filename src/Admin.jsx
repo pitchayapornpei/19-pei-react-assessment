@@ -1,89 +1,45 @@
 import "./Admin.css";
 import { useState } from "react";
 
-function Admin({ employees }) {
+function Admin({ employees, createData, removeData }) {
 
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [fullname, setFullname] = useState("");
-    const [organization, setOrganization] = useState("");
+    const [name, setName] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [position, setPosition] = useState("");
 
-    //const [role,setRole] = useState("users")
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
-        // console.log('Username:', username);
-    };
 
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value);
-        // console.log('Password:', password);
-    };
 
-    const handleFullnameChange = (event) => {
-        setFullname(event.target.value);
-        // console.log('fullname:', fullname);
-    };
-
-    const handleOrganizationChange = (event) => {
-        setOrganization(event.target.value);
-        // console.log('Organization:', Organization);
-    };
-
-    const handleSubmit = () => {
-
-        console.log("Username:", username);
-        console.log("Password:", password);
-        console.log("Fullname:", fullname);
-        console.log("Organization:", organization);
+    const handleNameChange = (event) => {
+        setName(event.target.value);
 
     };
+
+    const handleLastnameChange = (event) => {
+        setLastname(event.target.value);
+
+    };
+
+    const handlePositionChange = (event) => {
+        setPosition(event.target.value);
+
+    };
+
+    const handleSave = (event) => {
+        event.preventDefault();
+        createData(name, lastname, position);
+        setName("");
+        setLastname("");
+        setPosition("");
+    };
+
+    // const handleRemove = () => {
+    //     removeData(employee.id)
+    // };
 
 
     return (
         <div id="app">
-
-            {/* {role === 'user' && <User />} */}
-            {/* {role === 'admin' && <Admin />} */}
-
-            {/* <div className="item item-4">
-                <form>
-                    <label for="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                        value={name}
-                    // onChange={handleNameChange}
-                    />
-
-                    <label for="lastname">Last Name</label>
-                    <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        placeholder="Last Name"
-                        value={lastname}
-                    // onChange={handleLastnameChange}
-                    />
-
-                    <label for="position">Position</label>
-                    <input
-                        type="text"
-                        id="position"
-                        name="position"
-                        placeholder="Position"
-                        value={position}
-                    // onChange={handlePositionChange}
-                    />
-
-                    <button
-                        type="submit"
-                    // onClick={handleSubmit}
-                    >Save</button>
-                </form>
-            </div> */}
 
             <div className="item item-4">
                 <form className="create-user">
@@ -91,37 +47,37 @@ function Admin({ employees }) {
                     <label for="username">Name</label>
                     <input
                         type="text"
-                        id="username"
-                        name="username"
+                        id="name"
+                        name="name"
                         placeholder="Name"
-                        value={username}
-                        onChange={handleUsernameChange}
+                        value={name}
+                        onChange={handleNameChange}
                     />
 
                     <label for="username">Last Name</label>
                     <input
                         type="text"
-                        id="username"
-                        name="username"
+                        id="lastname"
+                        name="lastname"
                         placeholder="Last Name"
-                        value={username}
-                        onChange={handleUsernameChange}
+                        value={lastname}
+                        onChange={handleLastnameChange}
                     />
 
                     <label for="username">Position</label>
                     <input
                         type="text"
-                        id="username"
-                        name="username"
+                        id="position"
+                        name="position"
                         placeholder="Position"
-                        value={username}
-                        onChange={handleUsernameChange}
+                        value={position}
+                        onChange={handlePositionChange}
                     />
 
                     <button
                         className="button-save"
                         type="submit"
-                        onClick={handleSubmit}
+                        onClick={handleSave}
                     >Save</button>
                 </form>
             </div>
@@ -140,7 +96,7 @@ function Admin({ employees }) {
                     <tbody>
                         {employees.map((employee) => {
                             return (
-                                <tr>
+                                <tr key={employee.id}>
                                     <td>{employee.name}</td>
                                     <td>{employee.lastname}</td>
                                     <td>{employee.position}</td>
@@ -148,7 +104,7 @@ function Admin({ employees }) {
                                         <button
                                             className="button-delete"
                                             type="submit"
-                                        // onClick={handleSubmit}
+                                            onClick={() => removeData(employee.id)}
                                         >Delete</button>
                                     </td>
 
