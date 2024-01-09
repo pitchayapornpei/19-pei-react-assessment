@@ -1,0 +1,92 @@
+html,
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    background-color: rgb(55, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #646464;
+    /* border-radius: 6px 6px 0 0; */
+    /* border-collapse: collapse; */
+}
+
+.button-delete {
+    width: 30%;
+    background-color: rgb(195, 41, 41);
+    color: white;
+    padding: 14px 20px;
+    /* margin: 50px; */
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.button-delete:hover {
+    background-color: rgb(217, 98, 98);
+}
+
+.create-user {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: start;
+}
+
+/* form {
+  text-align: start;
+} */
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-save {
+    width: 30%;
+    background-color: rgb(60, 124, 253);
+    color: white;
+    padding: 14px 20px;
+    margin: 50px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.button-save:hover {
+    background-color: rgb(123, 167, 253);
+}

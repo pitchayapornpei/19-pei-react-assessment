@@ -1,0 +1,97 @@
+html,
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 50px;
+}
+
+.item {
+    display: block;
+    box-sizing: border-box;
+    /* width: 100%; */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.item-4 {
+    width: 33.33%;
+
+}
+
+.content {
+    color: black;
+    /* background-color: lightblue;
+    border: 2px solid black; */
+    padding: 16px;
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button-user {
+    width: 30%;
+    background-color: rgb(147, 60, 253);
+    color: white;
+    padding: 14px 20px;
+    margin: 50px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-user:hover {
+    background-color: rgb(193, 142, 255);
+}
+
+.button-admin {
+    width: 30%;
+    background-color: rgb(37, 170, 125);
+    color: white;
+    padding: 14px 20px;
+    margin: 50px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-admin:hover {
+    background-color: rgb(47, 212, 157);
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 100%; */
+
+}
+
+th,
+td {
+    background-color: rgb(55, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #646464;
+    /* border-radius: 6px 6px 0 0; */
+    /* border-collapse: collapse; */
+}
